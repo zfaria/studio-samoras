@@ -20,7 +20,7 @@ export const BUSINESS_DATA: BusinessInfo = {
   },
   maps: {
     directionsUrl: "https://maps.google.com/?daddr=Av.%20Conde%20de%20Monte%20Cristo%2C%20285%20-%20Jardim%20Monte%20Cristo%2C%20Suzano%20-%20SP%2C%2008670-020%2C%20Brazil",
-    embedQuery: "Av. Conde de Monte Cristo, 285 - Jardim Monte Cristo, Suzano - SP, 08670-020",
+    embedQuery: "Studio Samora's, Av. Conde de Monte Cristo, 285, Suzano - SP",
   },
   googleReviews: {
     rating: 5.0,

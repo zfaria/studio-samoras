@@ -133,7 +133,7 @@ export function LocationAndSchedule() {
             <div className="w-full h-full min-h-[380px] lg:min-h-[480px] rounded-2xl overflow-hidden border border-[#E2D5CF] shadow-sm relative bg-[#EFE5E0]">
               <iframe
                 title="Mapa de localização do Studio Samora's em Suzano"
-                src="https://maps.google.com/maps?q=Av.+Conde+de+Monte+Cristo,+285+-+Jardim+Monte+Cristo,+Suzano+-+SP,+08670-020&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                src={`https://maps.google.com/maps?q=${encodeURIComponent(BUSINESS_DATA.maps.embedQuery)}&t=&z=16&ie=UTF8&iwloc=&output=embed`}
                 width="100%"
                 height="100%"
                 style={{ border: 0, minHeight: '380px' }}
@@ -142,22 +142,6 @@ export function LocationAndSchedule() {
                 referrerPolicy="no-referrer-when-downgrade"
                 className="w-full h-full object-cover"
               />
-
-              {/* Subtle top floating card on map */}
-              <div className="absolute top-4 left-4 right-4 sm:right-auto sm:max-w-xs bg-white/95 backdrop-blur-md p-3.5 rounded-xl border border-white/80 shadow-md flex items-center justify-between gap-3">
-                <div>
-                  <p className="text-xs font-semibold text-[#72223D]">Studio Samora's</p>
-                  <p className="text-xs text-[#523F45]">Jardim Monte Cristo · Suzano</p>
-                </div>
-                <a
-                  href={BUSINESS_DATA.maps.directionsUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-3 py-1.5 bg-[#5B1D30] hover:bg-[#72223D] text-white text-xs font-medium rounded-lg transition-colors shrink-0"
-                >
-                  Abrir no Maps
-                </a>
-              </div>
             </div>
           </div>
         </div>
