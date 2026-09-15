@@ -40,7 +40,7 @@ export function Footer() {
                 href={BUSINESS_DATA.instagram.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-[#3D1A27] hover:bg-[#5C2337] flex items-center justify-center text-white transition-colors"
+                className="bg-instagram w-10 h-10 rounded-full flex items-center justify-center text-white hover:brightness-110 transition-all"
                 aria-label="Instagram do Studio Samora's"
               >
                 <Instagram className="w-5 h-5" />
@@ -101,7 +101,7 @@ export function Footer() {
                   rel="noopener noreferrer"
                   className="hover:text-white transition-colors flex items-center gap-1.5"
                 >
-                  <Instagram className="w-3.5 h-3.5 text-[#D4A5B5]" />
+                  <Instagram className="w-3.5 h-3.5 text-[#e1306c]" />
                   <span>Instagram</span>
                 </a>
               </li>

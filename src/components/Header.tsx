@@ -103,7 +103,7 @@ export function Header() {
               target="_blank"
               rel="noopener noreferrer"
               id="header-instagram-btn"
-              className="p-2 text-[#5E4A50] hover:text-[#72223D] hover:bg-[#F2EAE7] rounded-full transition-colors"
+              className="bg-instagram p-2 text-white rounded-full shadow-xs hover:brightness-110 transition-all"
               aria-label="Instagram do Studio Samora's"
             >
               <Instagram className="w-5 h-5" />
@@ -229,9 +229,9 @@ export function Header() {
                   href={BUSINESS_DATA.instagram.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 py-2.5 px-3 rounded-lg border border-[#E0D2CD] text-[#554046] hover:border-[#72223D] hover:text-[#72223D] text-xs font-semibold"
+                  className="bg-instagram flex items-center justify-center gap-2 py-2.5 px-3 rounded-lg text-white text-xs font-semibold shadow-xs hover:brightness-110 transition-all"
                 >
-                  <Instagram className="w-4 h-4 text-[#8C3A5A]" />
+                  <Instagram className="w-4 h-4" />
                   <span>Instagram</span>
                 </a>
                 <a

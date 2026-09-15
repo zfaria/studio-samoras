@@ -23,7 +23,7 @@ export function InstagramSection() {
             target="_blank"
             rel="noopener noreferrer"
             id="instagram-profile-cta"
-            className="inline-flex items-center gap-2 bg-[#5B1D30] hover:bg-[#72223D] text-white px-7 py-3 rounded-full text-sm font-semibold tracking-wide shadow-sm hover:shadow-md transition-all active:scale-98"
+            className="bg-instagram inline-flex items-center gap-2 text-white px-7 py-3 rounded-full text-sm font-semibold tracking-wide shadow-sm hover:shadow-md hover:brightness-110 transition-all active:scale-98"
           >
             <Instagram className="w-4 h-4" />
             <span>{BUSINESS_DATA.instagram.handle}</span>

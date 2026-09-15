@@ -37,3 +37,20 @@ body {
 .font-serif-luxury {
   font-family: var(--font-serif);
 }
+
+/* Paleta oficial do Instagram. Paradas quentes comprimidas no inicio para o texto branco cair sobre a faixa rosa/roxa. */
+.bg-instagram {
+  background-image: linear-gradient(
+    45deg,
+    #ffdc80 0%,
+    #fcaf45 8%,
+    #f77737 16%,
+    #f56040 24%,
+    #fd1d1d 34%,
+    #e1306c 48%,
+    #c13584 62%,
+    #833ab4 76%,
+    #5851db 88%,
+    #405de6 100%
+  );
+}

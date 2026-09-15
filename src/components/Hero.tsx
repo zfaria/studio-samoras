@@ -71,9 +71,9 @@ export function Hero() {
                 target="_blank"
                 rel="noopener noreferrer"
                 id="hero-secondary-cta"
-                className="inline-flex items-center justify-center gap-2.5 bg-white hover:bg-[#F8F1EF] text-[#4E182B] border border-[#E0D2CD] hover:border-[#72223D]/40 px-6 py-4 rounded-full text-base font-medium transition-all duration-200 active:scale-98 focus:outline-none focus:ring-2 focus:ring-[#72223D]"
+                className="bg-instagram inline-flex items-center justify-center gap-2.5 text-white px-6 py-4 rounded-full text-base font-semibold shadow-md hover:shadow-lg hover:brightness-110 transition-all duration-200 active:scale-98 focus:outline-none focus:ring-2 focus:ring-[#c13584] focus:ring-offset-2"
               >
-                <Instagram className="w-5 h-5 text-[#843851]" />
+                <Instagram className="w-5 h-5" />
                 <span>Conheça nosso Instagram</span>
               </a>
             </div>
