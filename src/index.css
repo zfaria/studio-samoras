@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, Cambria, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  
+  --color-amora-50: #FDF9FA;
+  --color-amora-100: #F8EDF1;
+  --color-amora-200: #F0DAE2;
+  --color-amora-300: #E1BDCC;
+  --color-amora-400: #C993A7;
+  --color-amora-500: #A85A76;
+  --color-amora-600: #843851;
+  --color-amora-700: #65233B;
+  --color-amora-800: #4E182B;
+  --color-amora-900: #380E1D;
+
+  --color-nude-50: #FAF7F5;
+  --color-nude-100: #F4EFEB;
+  --color-nude-200: #EAE0D9;
+  --color-nude-300: #DCCBC1;
+  --color-nude-400: #C7ADA0;
+  --color-nude-500: #A98A7A;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #FAF7F5;
+  color: #2D2326;
+  overflow-x: hidden;
+}
+
+.font-serif-luxury {
+  font-family: var(--font-serif);
+}

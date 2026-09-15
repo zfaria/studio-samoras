@@ -1,0 +1,20 @@
+{
+  "name": "Studio Samora's | Manicure e Pedicure em Suzano - SP",
+  "short_name": "Studio Samora's",
+  "description": "Estúdio de manicure e pedicure no Jardim Monte Cristo em Suzano, SP.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#FAF7F5",
+  "theme_color": "#5B1D30",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "/logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ]
+}
