@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import { Calendar, Instagram, MessageCircle, Menu, X, Clock } from 'lucide-react';
+import { Calendar, Instagram, Menu, X, Clock } from 'lucide-react';
+import { WhatsAppIcon } from './icons/WhatsAppIcon';
 import { BUSINESS_DATA } from '../data/business';
 import { getStudioStatus } from '../utils/status';
 
@@ -140,10 +141,10 @@ export function Header() {
               target="_blank"
               rel="noopener noreferrer"
               id="header-whatsapp-btn"
-              className="p-2 text-[#5E4A50] hover:text-[#72223D] hover:bg-[#F2EAE7] rounded-full transition-colors"
+              className="p-2 text-emerald-600 hover:text-emerald-700 hover:bg-emerald-50 rounded-full transition-colors"
               aria-label="WhatsApp do Studio Samora's"
             >
-              <MessageCircle className="w-5 h-5" />
+              <WhatsAppIcon className="w-5 h-5" />
             </a>
 
             {/* Main CTA: Booking */}
@@ -165,10 +166,10 @@ export function Header() {
               href={BUSINESS_DATA.whatsapp.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 text-[#5B1D30] bg-[#F2EAE7] rounded-full md:hidden"
+              className="p-2 text-emerald-600 bg-emerald-50 rounded-full md:hidden"
               aria-label="WhatsApp"
             >
-              <MessageCircle className="w-5 h-5" />
+              <WhatsAppIcon className="w-5 h-5" />
             </a>
 
             <button
@@ -273,7 +274,7 @@ export function Header() {
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 py-2.5 px-3 rounded-lg border border-[#E0D2CD] text-[#554046] hover:border-[#72223D] hover:text-[#72223D] text-xs font-semibold"
                 >
-                  <MessageCircle className="w-4 h-4 text-emerald-700" />
+                  <WhatsAppIcon className="w-4 h-4 text-emerald-700" />
                   <span>WhatsApp</span>
                 </a>
               </div>

@@ -1,4 +1,5 @@
-import { MessageCircle, Calendar } from 'lucide-react';
+import { Calendar } from 'lucide-react';
+import { WhatsAppIcon } from './icons/WhatsAppIcon';
 import { BUSINESS_DATA } from '../data/business';
 
 export function FloatingActions() {
@@ -20,7 +21,7 @@ export function FloatingActions() {
             <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-400"></span>
           </span>
 
-          <MessageCircle className="w-5 h-5 text-white" />
+          <WhatsAppIcon className="w-5 h-5 text-white" />
           <span className="text-xs font-semibold tracking-wide">Falar no WhatsApp</span>
         </a>
       </aside>
@@ -42,7 +43,7 @@ export function FloatingActions() {
             className="flex items-center justify-center w-12 h-12 rounded-xl bg-[#F0FAF4] border border-emerald-200 text-emerald-700 hover:bg-emerald-50 active:scale-95 transition-transform shrink-0"
             aria-label="Conversar no WhatsApp"
           >
-            <MessageCircle className="w-6 h-6 text-emerald-600" />
+            <WhatsAppIcon className="w-6 h-6 text-emerald-600" />
           </a>
 
           {/* Primary Agendar Horário CTA */}

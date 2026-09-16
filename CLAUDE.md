@@ -43,6 +43,7 @@ specs/                     # spec-kit do projeto (spec → plan → tasks por fe
 6. **Links externos** (WhatsApp, Instagram, agendamento, Google Maps/Reviews) sempre com `target="_blank"` e `rel="noopener noreferrer"`.
 7. **Idioma**: todo conteúdo visível é em pt-BR. Não traduzir para outro idioma sem pedido explícito.
 8. **Sem novas dependências pesadas** sem necessidade real — este é um site estático simples; antes de adicionar uma lib, verifique se dá para resolver com Tailwind/React puro.
+9. **Botões de WhatsApp usam o logo oficial e são verdes.** O lucide não tem ícones de marca, então use `WhatsAppIcon` ([`src/components/icons/WhatsAppIcon.tsx`](src/components/icons/WhatsAppIcon.tsx)), nunca `MessageCircle`. O ícone herda a cor via `currentColor` — aplique os tons `emerald-*` no próprio ícone ou no botão. (`MessageCircle` continua válido só como ícone de "comentário", como na seção do Instagram.)
 
 ## Produção e deploy
 

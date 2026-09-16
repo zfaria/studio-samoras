@@ -1,4 +1,5 @@
-import { Calendar, MessageCircle, Sparkles, ArrowRight } from 'lucide-react';
+import { Calendar, Sparkles, ArrowRight } from 'lucide-react';
+import { WhatsAppIcon } from './icons/WhatsAppIcon';
 import { BUSINESS_DATA } from '../data/business';
 
 export function FinalCta() {
@@ -47,7 +48,7 @@ export function FinalCta() {
             id="final-cta-whatsapp"
             className="inline-flex items-center justify-center gap-2.5 bg-white hover:bg-[#F9F5F3] text-[#3A1823] border border-[#D9C4CC] px-8 py-4 rounded-full text-base font-semibold tracking-wide transition-all duration-200 active:scale-98 focus:outline-none focus:ring-2 focus:ring-[#72223D]"
           >
-            <MessageCircle className="w-5 h-5 text-emerald-700" />
+            <WhatsAppIcon className="w-5 h-5 text-emerald-700" />
             <span>Falar pelo WhatsApp</span>
           </a>
         </div>
