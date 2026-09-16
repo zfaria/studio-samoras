@@ -10,6 +10,8 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
 [![Licença MIT](https://img.shields.io/badge/Licença-MIT-green.svg)](LICENSE)
 
+**🔗 Site no ar:** https://studio-samoras.vercel.app/
+
 </div>
 
 ---
@@ -36,7 +38,21 @@ O site é construído **mobile-first**: a experiência é desenhada primeiro par
 | Linguagem | TypeScript |
 | Ícones | [lucide-react](https://lucide.dev) |
 
-Não há backend, banco de dados ou build de servidor — é uma SPA 100% estática que pode ser hospedada em qualquer serviço de arquivos estáticos (Vercel, Netlify, GitHub Pages, Cloudflare Pages etc.).
+Não há backend, banco de dados ou build de servidor — é uma SPA 100% estática.
+
+## Deploy
+
+O site está hospedado na **Vercel**, no ar em **https://studio-samoras.vercel.app/**, com integração direta a este repositório:
+
+| Item | Valor |
+|---|---|
+| Gatilho | Todo push na branch `main` |
+| Framework detectado | Vite (automático) |
+| Comando de build | `npm run build` |
+| Diretório publicado | `dist` |
+| Variáveis de ambiente | Nenhuma |
+
+Não há passo manual de publicação nem ambiente de staging: **o que entra em `main` vai ao ar em cerca de um minuto**. Por isso, rode `npm run lint` e `npm run build` antes de commitar.
 
 ## Rodando localmente
 

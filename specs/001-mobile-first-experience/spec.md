@@ -26,7 +26,7 @@ Por isso o site é **mobile-first**: toda tela e todo componente são desenhados
 
 1. **Navegação por toque**: todo alvo clicável (botões, links, ícones) tem no mínimo ~44×44px de área de toque em telas < 640px.
 2. **Ações críticas sempre visíveis no mobile**: "Agendar Horário" e "WhatsApp" devem estar acessíveis sem rolar a página, via barra fixa inferior.
-3. **Menu de navegação**: em telas < 1024px (`lg`), a navegação colapsa em um menu do tipo drawer/gaveta acionado por um botão hambúrguer.
+3. **Menu de navegação**: em telas < 1280px (`xl`), a navegação colapsa em um menu do tipo drawer/gaveta acionado por um botão hambúrguer. O limite é 1280px, e não 1024px, porque abaixo disso a barra não comporta marca + 7 links + selo + CTA sem cortar o botão de agendamento.
 4. **Conteúdo em coluna única no mobile**: grids de serviços, avaliações, galeria e localização usam 1 coluna em `base`, expandindo em `sm`/`md`/`lg`.
 5. **Sem rolagem horizontal** em nenhuma largura de viewport a partir de 320px.
 6. **Compatibilidade com áreas seguras (safe-area)**: elementos fixos na borda inferior (barra de ações mobile) não podem ficar atrás do indicador de home / notch em iPhones.
@@ -41,7 +41,7 @@ Por isso o site é **mobile-first**: toda tela e todo componente são desenhados
 - [ ] A barra de ação fixa mobile não sobrepõe conteúdo do rodapé nem é sobreposta pelo indicador de home.
 - [ ] Todos os links externos (WhatsApp, Instagram, agendamento) abrem em nova aba com `rel="noopener noreferrer"`.
 - [ ] O Lighthouse Mobile (categoria Performance) não deve regredir abaixo de 85 ao adicionar novas seções.
-- [ ] Qualquer nova seção adicionada ao site segue a ordem: layout mobile primeiro (classes sem prefixo) → ajustes `sm:` → `md:` → `lg:`.
+- [ ] Qualquer nova seção adicionada ao site segue a ordem: layout mobile primeiro (classes sem prefixo) → ajustes `sm:` → `md:` → `lg:` → `xl:` → `2xl:`.
 
 ## Fora de escopo (por enquanto)
 

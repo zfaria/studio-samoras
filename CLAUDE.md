@@ -37,12 +37,20 @@ specs/                     # spec-kit do projeto (spec → plan → tasks por fe
 
 1. **Dados do negócio vêm de `src/data/business.ts`.** Nunca hardcode telefone, endereço, horário ou links de agendamento/Instagram/WhatsApp direto em um componente — sempre leia de `BUSINESS_DATA` (ou das outras constantes exportadas ali: `SERVICES_STRUCTURE`, `GOOGLE_REVIEWS`, etc.).
 2. **Não invente dados do negócio** (preços, promoções, depoimentos, horários). Se uma informação não existir em `business.ts` ou não for fornecida explicitamente, use um placeholder claro ("Consulte no agendamento") em vez de inventar.
-3. **Mobile-first sempre**: escreva classes Tailwind sem prefixo para o layout mobile primeiro, depois `sm:` → `md:` → `lg:`. Nunca escreva uma seção pensando primeiro em desktop.
+3. **Mobile-first sempre**: escreva classes Tailwind sem prefixo para o layout mobile primeiro, depois `sm:` → `md:` → `lg:` → `xl:` → `2xl:`. Nunca escreva uma seção pensando primeiro em desktop. Atenção ao cabeçalho, que foge da escala das seções: o menu horizontal entra só em `xl` e o selo de status em `2xl` — os motivos estão em [`specs/001-mobile-first-experience/plan.md`](specs/001-mobile-first-experience/plan.md), seção "Decisões não óbvias".
 4. **Imagens**: todo `<img>` fora da dobra inicial leva `loading="lazy"`. A imagem do Hero é a única com `loading="eager"` + `fetchPriority="high"` (é o LCP da página) — não duplicar esse tratamento em outras imagens.
 5. **Não reintroduza duplicatas de imagem.** `public/images/` é a única pasta de imagens do projeto (não recriar `src/assets/images` — foi removida por ser cópia exata e não utilizada).
 6. **Links externos** (WhatsApp, Instagram, agendamento, Google Maps/Reviews) sempre com `target="_blank"` e `rel="noopener noreferrer"`.
 7. **Idioma**: todo conteúdo visível é em pt-BR. Não traduzir para outro idioma sem pedido explícito.
 8. **Sem novas dependências pesadas** sem necessidade real — este é um site estático simples; antes de adicionar uma lib, verifique se dá para resolver com Tailwind/React puro.
+
+## Produção e deploy
+
+- **No ar em:** https://studio-samoras.vercel.app/
+- **Hospedagem:** Vercel, integrado ao repositório GitHub `zfaria/studio-samoras`. **Todo push na branch `main` dispara build e deploy automáticos** — não existe passo manual de publicação, e não há ambiente de staging.
+- **Configuração:** o Vercel detecta o Vite sozinho (build `npm run build`, saída `dist`). Não existe `vercel.json` e não é necessário — o site é uma página única com âncoras, sem rotas client-side que exijam rewrites.
+- **Variáveis de ambiente:** nenhuma. O site não consome API alguma em runtime.
+- **Consequência prática:** um commit em `main` chega ao site público em cerca de um minuto. Rode `npm run build` antes de commitar, e trate qualquer mudança visual como algo que irá direto ao ar.
 
 ## Comandos
 

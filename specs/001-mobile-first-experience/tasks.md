@@ -5,7 +5,7 @@ Checklist derivado de [`plan.md`](plan.md). Ordem não implica prioridade estrit
 ## Estrutura e navegação — Feito
 
 - [x] Layout mobile em coluna única como base em todas as seções.
-- [x] Menu hambúrguer + drawer abaixo de `lg` (1024px) no [Header](../../src/components/Header.tsx).
+- [x] Menu hambúrguer + drawer abaixo de `xl` (1280px) no [Header](../../src/components/Header.tsx).
 - [x] Barra de ações fixa (Agendar + WhatsApp) visível só no mobile, com CTA de agendamento sempre a um toque de distância.
 - [x] Botão flutuante de WhatsApp em telas ≥ `sm`.
 
@@ -27,6 +27,15 @@ Checklist derivado de [`plan.md`](plan.md). Ordem não implica prioridade estrit
 - [x] Removido `public/images/lilian molica.png` (duplicata não referenciada de `lilian-molica.png`).
 - [x] Removidas dependências não usadas (`@google/genai`, `express`, `dotenv`, `@types/express`, `motion`) e arquivos de scaffold do AI Studio (`metadata.json`, `.env.example`) sem uso real no código.
 - [x] `package.json` renomeado de `react-example` para `studio-samoras`.
+
+## Feito — rodada de 2026-09-15 (identidade, mapa e cabeçalho)
+
+- [x] Metadados de SEO e compartilhamento apontando para a URL de produção (canonical, `og:`/`twitter:` absolutos, JSON-LD com foto real).
+- [x] Botões do Instagram com a paleta oficial da marca, centralizada em `.bg-instagram` (`src/index.css`).
+- [x] Duplicação de endereço no mapa resolvida: cartão sobreposto removido e embed buscando pelo nome do negócio via `maps.embedQuery`.
+- [x] Cabeçalho: marca em uma linha de 375 a 1600px, selo de status com respiro próprio, e destaque em tempo real da seção visível durante a rolagem.
+- [x] Corrigido o corte do CTA "Agende seu horário", que estourava o contêiner em até 130px e era escondido pelo `overflow-x: hidden` (sem rolagem horizontal para denunciar).
+- [x] Removida a imagem órfã `public/images/studio_samoras_logo_1789503945532.jpg` (~570KB, sem nenhuma referência no código).
 
 ## Pendente — Performance de imagens
 
