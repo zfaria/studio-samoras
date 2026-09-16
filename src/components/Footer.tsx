@@ -1,5 +1,6 @@
 import { Instagram, Calendar, MapPin, Clock, ArrowUp, Star } from 'lucide-react';
 import { WhatsAppIcon } from './icons/WhatsAppIcon';
+import { FacebookIcon } from './icons/FacebookIcon';
 import { BUSINESS_DATA } from '../data/business';
 
 export function Footer() {
@@ -56,6 +57,15 @@ export function Footer() {
                 <WhatsAppIcon className="w-5 h-5 text-emerald-400" />
               </a>
               <a
+                href={BUSINESS_DATA.facebook.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full flex items-center justify-center hover:brightness-110 transition-all"
+                aria-label="Facebook do Studio Samora's"
+              >
+                <FacebookIcon className="w-10 h-10" />
+              </a>
+              <a
                 href={BUSINESS_DATA.booking.url}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -104,6 +114,17 @@ export function Footer() {
                 >
                   <Instagram className="w-3.5 h-3.5 text-[#e1306c]" />
                   <span>Instagram</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href={BUSINESS_DATA.facebook.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors flex items-center gap-1.5"
+                >
+                  <FacebookIcon className="w-3.5 h-3.5" />
+                  <span>Facebook</span>
                 </a>
               </li>
               <li>

@@ -1,5 +1,6 @@
 import { Instagram, ArrowUpRight, Heart, MessageCircle } from 'lucide-react';
 import { BUSINESS_DATA, INSTAGRAM_PREVIEWS } from '../data/business';
+import { FacebookIcon } from './icons/FacebookIcon';
 
 export function InstagramSection() {
   return (
@@ -12,23 +13,36 @@ export function InstagramSection() {
             <span>Redes Sociais</span>
           </div>
           <h2 className="font-serif-luxury text-3xl sm:text-4xl lg:text-5xl font-medium text-[#2C111B] leading-tight mb-3">
-            Veja nosso trabalho no Instagram
+            Veja nosso trabalho nas redes sociais
           </h2>
           <p className="text-base sm:text-lg text-[#5F4E54] leading-relaxed mb-6">
             Acompanhe nossos trabalhos, novidades e inspirações.
           </p>
 
-          <a
-            href={BUSINESS_DATA.instagram.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            id="instagram-profile-cta"
-            className="bg-instagram inline-flex items-center gap-2 text-white px-7 py-3 rounded-full text-sm font-semibold tracking-wide shadow-sm hover:shadow-md hover:brightness-110 transition-all active:scale-98"
-          >
-            <Instagram className="w-4 h-4" />
-            <span>{BUSINESS_DATA.instagram.handle}</span>
-            <ArrowUpRight className="w-4 h-4 opacity-80" />
-          </a>
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 max-w-xs sm:max-w-none mx-auto">
+            <a
+              href={BUSINESS_DATA.instagram.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              id="instagram-profile-cta"
+              className="bg-instagram inline-flex items-center justify-center gap-2 text-white px-7 py-3 rounded-full text-sm font-semibold tracking-wide shadow-sm hover:shadow-md hover:brightness-110 transition-all active:scale-98"
+            >
+              <Instagram className="w-4 h-4" />
+              <span>{BUSINESS_DATA.instagram.handle}</span>
+              <ArrowUpRight className="w-4 h-4 opacity-80" />
+            </a>
+            <a
+              href={BUSINESS_DATA.facebook.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              id="facebook-page-cta"
+              className="inline-flex items-center justify-center gap-2 bg-white text-[#1C2B4A] border border-[#D5DDEE] hover:border-[#0866FF] px-7 py-3 rounded-full text-sm font-semibold tracking-wide shadow-sm hover:shadow-md transition-all active:scale-98"
+            >
+              <FacebookIcon className="w-5 h-5" />
+              <span>Seguir no Facebook</span>
+              <ArrowUpRight className="w-4 h-4 opacity-60" />
+            </a>
+          </div>
         </div>
 
         {/* Instagram Grid Showcase */}

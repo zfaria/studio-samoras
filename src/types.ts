@@ -25,6 +25,9 @@ export interface BusinessInfo {
     handle: string;
     url: string;
   };
+  facebook: {
+    url: string;
+  };
   whatsapp: {
     display: string;
     url: string;

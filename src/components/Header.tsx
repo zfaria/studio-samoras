@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Calendar, Instagram, Menu, X, Clock } from 'lucide-react';
 import { WhatsAppIcon } from './icons/WhatsAppIcon';
+import { FacebookIcon } from './icons/FacebookIcon';
 import { BUSINESS_DATA } from '../data/business';
 import { getStudioStatus } from '../utils/status';
 
@@ -258,12 +259,12 @@ export function Header() {
               </a>
 
               {/* Social Channels Row */}
-              <div className="grid grid-cols-2 gap-2 pt-1">
+              <div className="grid grid-cols-3 gap-2 pt-1">
                 <a
                   href={BUSINESS_DATA.instagram.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-instagram flex items-center justify-center gap-2 py-2.5 px-3 rounded-lg text-white text-xs font-semibold shadow-xs hover:brightness-110 transition-all"
+                  className="bg-instagram flex items-center justify-center gap-1.5 py-2.5 px-2 rounded-lg text-white text-xs font-semibold shadow-xs hover:brightness-110 transition-all"
                 >
                   <Instagram className="w-4 h-4" />
                   <span>Instagram</span>
@@ -272,10 +273,20 @@ export function Header() {
                   href={BUSINESS_DATA.whatsapp.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 py-2.5 px-3 rounded-lg border border-[#E0D2CD] text-[#554046] hover:border-[#72223D] hover:text-[#72223D] text-xs font-semibold"
+                  className="flex items-center justify-center gap-1.5 py-2.5 px-2 rounded-lg border border-[#E0D2CD] text-[#554046] hover:border-[#72223D] hover:text-[#72223D] text-xs font-semibold"
                 >
                   <WhatsAppIcon className="w-4 h-4 text-emerald-700" />
                   <span>WhatsApp</span>
+                </a>
+                <a
+                  href={BUSINESS_DATA.facebook.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-1.5 py-2.5 px-2 rounded-lg border border-[#E0D2CD] text-[#554046] hover:border-[#0866FF] hover:text-[#0866FF] text-xs font-semibold"
+                  aria-label="Seguir o Studio Samora's no Facebook"
+                >
+                  <FacebookIcon className="w-4 h-4" />
+                  <span>Facebook</span>
                 </a>
               </div>
             </div>

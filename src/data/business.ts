@@ -10,6 +10,9 @@ export const BUSINESS_DATA: BusinessInfo = {
     handle: "@studiosamoras",
     url: "https://www.instagram.com/studiosamoras",
   },
+  facebook: {
+    url: "https://www.facebook.com/profile.php?id=100040885817927",
+  },
   whatsapp: {
     display: "(11) 94549-2722",
     url: "https://api.whatsapp.com/send/?phone=5511945492722&type=phone_number",

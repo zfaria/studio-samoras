@@ -44,6 +44,7 @@ specs/                     # spec-kit do projeto (spec → plan → tasks por fe
 7. **Idioma**: todo conteúdo visível é em pt-BR. Não traduzir para outro idioma sem pedido explícito.
 8. **Sem novas dependências pesadas** sem necessidade real — este é um site estático simples; antes de adicionar uma lib, verifique se dá para resolver com Tailwind/React puro.
 9. **Botões de WhatsApp usam o logo oficial e são verdes.** O lucide não tem ícones de marca, então use `WhatsAppIcon` ([`src/components/icons/WhatsAppIcon.tsx`](src/components/icons/WhatsAppIcon.tsx)), nunca `MessageCircle`. O ícone herda a cor via `currentColor` — aplique os tons `emerald-*` no próprio ícone ou no botão. (`MessageCircle` continua válido só como ícone de "comentário", como na seção do Instagram.)
+10. **Facebook usa o logo circular oficial**, via `FacebookIcon` ([`src/components/icons/FacebookIcon.tsx`](src/components/icons/FacebookIcon.tsx)), com cores fixas da marca (círculo `#0866FF`, "f" branco). O link vem de `BUSINESS_DATA.facebook.url`. O ícone **não** fica na barra superior do desktop: ali sobra pouca largura e um ícone a mais volta a cortar o CTA de agendamento (ver "Decisões não óbvias" no `plan.md`).
 
 ## Produção e deploy
 
